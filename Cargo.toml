@@ -11,13 +11,15 @@ members = [
   "crates/text-buffer",
   "crates/rune-macros",
   "crates/rune-core",
-  "crates/interval-tree"
+  "crates/interval-tree",
+  "crates/engine"
 ]
 
 [workspace.package]
 edition = "2024"
 
 [workspace.dependencies]
+bevy = { version = "0.17.3", default-features = false }
 syn = { version = "2.0.15", features = ["full"] }
 quote = "1.0.26"
 anyhow = "1.0.69"
@@ -35,7 +37,8 @@ proptest-derive = "0.7.0"
 text-buffer = { version = "0.1.0", path = "crates/text-buffer" }
 rune-core = { version = "0.1.0", path = "crates/rune-core" }
 rune-macros = { version = "0.1.0", path = "crates/rune-macros" }
-interval-tree ={ version = "0.1.0", path = "crates/interval-tree" }
+interval-tree = { version = "0.1.0", path = "crates/interval-tree" }
+engine = { version = "0.1.0", path = "crates/engine" }
 
 [dependencies]
 anyhow = { workspace = true }
