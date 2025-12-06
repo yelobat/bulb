@@ -5,6 +5,14 @@ Bulb does not intend to replace Emacs, but to extend the reach of Emacs Lisp. It
 aims to provide a set of visualisation tools that are controllable via Emacs
 Lisp.
 
+To run it (as of now), you can do the following:
+
+#+BEGIN_SRC sh
+# Navigate to the engine crate
+cd ~/bulb/crates/engine
+cargo run
+#+END_SRC
+
 * rune
 *R* ust *UN* der *E* macs
 [[https://emacsconf.org/2024/talks/rust/][video introduction]]

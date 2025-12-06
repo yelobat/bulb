@@ -1,0 +1,47 @@
+[package]
+name = "engine"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+bevy = { workspace = true, features = [
+     # Required Features
+     "bevy_window",
+     "bevy_winit",
+     "bevy_render",
+     "bevy_camera",
+     "bevy_state",
+     "bevy_sprite",
+     "bevy_sprite_render",
+     "bevy_input_focus",
+     "bevy_text",
+     "default_font",
+     "bevy_ui",
+     "bevy_ui_render",
+     "bevy_asset",
+     "png",
+     "serialize",
+     "bevy_pbr",
+
+     # Platform Features
+     "wayland",
+     "x11",
+
+     # Extra Features
+     "multi_threaded",
+]}
+
+[lints]
+workspace = true
+
+[features]
+default = ["dev"]
+dev = [
+    "bevy/dynamic_linking",
+    "bevy/reflect_auto_register",
+    "bevy/bevy_remote",
+    "bevy/bevy_log",
+    "bevy/bevy_dev_tools",
+    "bevy/bevy_ui_debug",
+    "bevy/track_location",
+]
