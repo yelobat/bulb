@@ -1,4 +1,11 @@
-* Rune
+This is a fork of [[https://github.com/CeleritasCelery/rune][rune]].
+
+* bulb
+Bulb does not intend to replace Emacs, but to extend the reach of Emacs Lisp. It
+aims to provide a set of visualisation tools that are controllable via Emacs
+Lisp.
+
+* rune
 *R* ust *UN* der *E* macs
 [[https://emacsconf.org/2024/talks/rust/][video introduction]]
 
